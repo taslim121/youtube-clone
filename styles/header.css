@@ -1,0 +1,159 @@
+.header{
+  height:55px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  background-color:white ;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: lightgray;
+  z-index:100;
+  
+  
+}
+.left-section{
+  display:flex;
+  align-items: center;
+  
+}
+.logo-utube{
+  height:20px;
+}
+.logo-menu{
+  height:24px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.mid-section {
+  display:flex;
+  align-items: center;
+  flex-direction: row;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width:500px;
+  
+}
+
+.search-bar{
+  flex:1;
+  height:36px;
+  padding-left: 10px;
+  font-size: 16px;
+  border-width: 1px;
+  border-style:solid;
+  border-color:lightgray;
+  border-radius: 2px;
+  box-shadow:inset 1px 2px 2px rgba(0,0,0,0.2) ;
+  width:0;
+}
+.search-bar::placeholder{
+  font-family:Roboto,Arial;
+  font-size:16px;
+}
+.search-button{
+  width:66px;
+  height: 39px;
+  border-width: 1px;
+  border-style:solid;
+  border-color:lightgray;
+  border-radius: 2px;
+  margin-left:-1px;
+  margin-right:8px;
+}
+.search-button,.voice-button,
+.upload-container,.apps-container,
+.notification-container,
+.myprofile-container{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.search-button .tooltip,
+.voice-button .tooltip,
+.upload-container .tooltip,
+.apps-container .tooltip,
+.notification-container .tooltip,
+.myprofile-container .tooltip{
+    position:absolute;
+    background-color:gray;
+    padding:3px;
+    color:white;
+    font-size:12px;
+    opacity:0;
+    transition: opacity 0.1s;
+    pointer-events:none;
+    bottom:-30px;
+    border-radius:4px;
+    white-space: nowrap;
+    font-family: Roboto,Arial;
+    
+}
+.search-button:hover .tooltip,
+.voice-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.apps-container:hover .tooltip,
+.notification-container:hover .tooltip,
+.myprofile-container:hover .tooltip{
+    opacity:1;
+    cursor: pointer;
+    
+}
+.voice-button{
+  width: 40px;
+  height:40px;
+  border-radius:50%;
+  border:none;
+  
+}
+.logo-search{
+  height:25px;
+}
+.logo-voice{
+  height:24px;
+}
+.right-section{
+  display:flex;
+  align-items:center;
+  width:200px;
+  justify-content: space-evenly;
+  flex-shrink:0;
+  
+}
+.logo-upload{
+  height:24px;
+}
+.logo-apps{
+  height:24px;
+}
+.logo-notification{
+  height:24px;
+}
+.notification-container{
+    position: relative;
+}
+.notification-counter{
+    position:absolute;
+    background-color: #C20808;
+    color:white;
+    text-align: center;
+    font-family:Roboto,Arial;
+    font-weight:500;
+    font-size:12px;
+    padding:2px;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    right:-2px;
+    top:-2px;
+}
+.user-picture{
+  height: 32px;
+  border-radius:50%;
+}
